@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { products } from '../data/products';
+import { products, dealer } from '../data/products';
 import SpecTable from '../components/SpecTable';
 import CTASection from '../components/CTASection';
 
@@ -99,7 +99,7 @@ export default function ProductDetail() {
               </div>
 
               <a
-                href={`https://wa.me/6281234567890?text=${encodeURIComponent(
+                href={`https://wa.me/${dealer.whatsapp}?text=${encodeURIComponent(
                   `Halo, saya tertarik dengan ${product.name}. Bisa info lebih lanjut?`
                 )}`}
                 target="_blank"
@@ -138,7 +138,7 @@ export default function ProductDetail() {
       {/* Specs Table */}
       <section className="py-10 lg:py-14">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SpecTable specs={product.specs} />
+          <SpecTable product={product} />
         </div>
       </section>
 

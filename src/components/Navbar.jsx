@@ -120,5 +120,5 @@ export default function Navbar() {
 }
 
 const dealer = {
-  whatsapp: '6281234567890',
+  whatsapp: '6281776899848',
 };

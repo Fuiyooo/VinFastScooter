@@ -74,20 +74,31 @@ export default function Kontak() {
               </a>
             </motion.div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl border border-gray-200 aspect-square lg:aspect-auto flex flex-col items-center justify-center p-10"
+              className="relative rounded-3xl overflow-hidden border border-gray-200 aspect-square lg:aspect-auto"
             >
-              <MapPin className="w-16 h-16 text-primary/30 mb-5" />
-              <p className="text-text-muted text-lg font-medium text-center">
-                Peta Lokasi Dealer
-              </p>
-              <p className="text-text-muted/60 text-sm mt-2 text-center">
-                Google Maps embed akan ditampilkan di sini
-              </p>
+              <iframe
+                title="Lokasi Dealer VinFast Cikawao"
+                src="https://maps.google.com/maps?q=Vinfast%20Cikawao%2C%20Jl.%20Cikawao%20No.51C%2C%20Paledang%2C%20Lengkong%2C%20Bandung&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                className="absolute inset-0 w-full h-full"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+              <a
+                href={dealer.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute bottom-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm px-5 py-2.5 rounded-xl text-sm font-semibold text-primary shadow-lg border border-gray-100 hover:bg-white transition-colors"
+              >
+                <MapPin className="w-4 h-4" />
+                Buka di Google Maps
+              </a>
             </motion.div>
           </div>
         </div>

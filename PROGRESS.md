@@ -224,11 +224,13 @@ Semua gambar diekstrak dari PDF pada **300 DPI** dengan auto-trim (ImageMagick `
 - [ ] Review visual di browser (mobile & desktop), zoom 125%
 - [x] Bersihkan unused imports (Battery di ProductCard & ProductDetail, products di Hero) ✅
 - [ ] Fix border gambar produk (CSS: inner shadow, clip-path, atau re-trim manual)
-- [x] Isi harga asli dari data dealer/catalog — masih `-`, menunggu data dealer
+- [x] Isi harga asli dari data dealer/catalog ✅ (Evo 17.875.000, Feliz 18.875.000, Viper 22.375.000)
 - [x] Ganti favicon (logo VinFast, sumber: Wikimedia Commons "VinFast logo (simple variant).svg") ✅
 - [x] ProductDetail: ganti carousel dengan 1 gambar statis ✅
 - [x] Navbar: logo diganti wordmark VinFast resmi (`public/vinfast-logo.svg`) ✅
 - [x] Gambar produk diganti foto polosan transparan dari server resmi VinFast (`public/images/{evo,feliz,viper}/product.png`) ✅
+- [x] Hero: edit katalog (hapus logo VINFAST & bar footer biru Cikawao) ✅
+- [x] Embed Google Maps di halaman Kontak + alamat asli dealer Cikawao ✅
 - [ ] Embed Google Maps di halaman Kontak
 - [ ] Deploy ke Vercel/Netlify/Hosting lain
 
