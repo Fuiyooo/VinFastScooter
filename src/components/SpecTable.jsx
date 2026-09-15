@@ -65,9 +65,6 @@ function FullSpecsModal({ productId, productName, onClose }) {
               </div>
             </div>
           ))}
-          <p className="text-xs text-text-muted text-center pt-2 pb-4">
-            Semua visual, spesifikasi, dan fitur yang direpresentasi hanya untuk tujuan ilustrasi dan tidak mengikat. Produk sebenarnya mungkin berbeda dan dapat berubah sewaktu-waktu tanpa pemberitahuan.
-          </p>
         </div>
       </motion.div>
     </motion.div>
