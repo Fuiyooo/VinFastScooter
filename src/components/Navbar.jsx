@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Zap } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
@@ -35,13 +35,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 lg:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-primary rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
-              <Zap className="w-6 h-6 lg:w-7 lg:h-7 text-white" strokeWidth={2.5} />
-            </div>
-            <span className="text-2xl font-extrabold font-[family-name:var(--font-heading)] tracking-tight">
-              Vin<span className="text-primary">Fast</span>
-            </span>
+          <Link to="/" className="flex items-center group">
+            <img
+              src="/vinfast-logo-clean.png"
+              alt="VinFast"
+              className="h-9 lg:h-10 w-auto group-hover:opacity-80 transition-opacity"
+            />
           </Link>
 
           {/* Desktop Nav */}

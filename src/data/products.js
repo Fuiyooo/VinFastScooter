@@ -6,7 +6,7 @@ export const products = [
     taglineDesc: 'Mudah & Praktis untuk Aktivitas Sehari-hari',
     price: '-',
     colors: ['Putih', 'Hitam', 'Biru'],
-    images: ['/images/evo/page-1.png', '/images/evo/page-2.png'],
+    images: ['/images/evo/product.png', '/images/evo/page-1.png', '/images/evo/page-2.png'],
     specs: {
       'Tipe Motor': 'Sepeda Listrik',
       'Tipe Baterai': 'Lithium-ion',
@@ -35,7 +35,7 @@ export const products = [
     taglineDesc: 'Cerdas & Stylish untuk Generasi Muda',
     price: '-',
     colors: ['Putih', 'Hitam', 'Merah'],
-    images: ['/images/feliz/page-1.png', '/images/feliz/page-2.png'],
+    images: ['/images/feliz/product.png', '/images/feliz/page-1.png', '/images/feliz/page-2.png'],
     specs: {
       'Tipe Motor': 'Sepeda Listrik',
       'Tipe Baterai': 'Lithium-ion',
@@ -65,7 +65,7 @@ export const products = [
     taglineDesc: 'Performa Tinggi untuk Pengendara Berani',
     price: '-',
     colors: ['Hitam', 'Merah', 'Biru'],
-    images: ['/images/viper/page-1.png', '/images/viper/page-2.png'],
+    images: ['/images/viper/product.png', '/images/viper/page-1.png', '/images/viper/page-2.png'],
     specs: {
       'Tipe Motor': 'Sepeda Listrik',
       'Tipe Baterai': 'Lithium-ion',

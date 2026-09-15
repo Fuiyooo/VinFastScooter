@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { products } from '../data/products';
 import SpecTable from '../components/SpecTable';
 import CTASection from '../components/CTASection';
-import Carousel from '../components/Carousel';
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -37,13 +36,17 @@ export default function ProductDetail() {
           </Link>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Image Carousel */}
+            {/* Image */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="relative"
+              className="relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-gray-100 aspect-square flex items-center justify-center overflow-hidden"
             >
-              <Carousel images={product.images} autoPlay interval={4000} />
+              <img
+                src={product.images[0]}
+                alt={product.name}
+                className="w-full h-full object-contain p-6"
+              />
             </motion.div>
 
             {/* Info */}
