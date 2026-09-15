@@ -19,7 +19,7 @@ export default function ProductCard({ product, index = 0 }) {
           <img
             src={product.images[0]}
             alt={product.name}
-            className="w-full h-full object-contain p-3 hover:scale-105 transition-transform duration-500"
+            className="h-40 sm:h-48 w-auto max-w-[85%] object-contain drop-shadow-lg hover:scale-105 transition-transform duration-500"
           />
           <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm">
             <span className="text-sm font-semibold text-primary">{product.tagline}</span>

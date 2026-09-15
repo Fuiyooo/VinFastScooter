@@ -75,9 +75,9 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative flex justify-center lg:justify-end"
           >
-            <div className="relative w-full max-w-lg">
+            <div className="relative w-full max-w-xl">
               <img
-                src="/images/catalog/page-1.png"
+                src="/images/catalog/page-1.webp"
                 alt="VinFast Scooter Brosur"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

@@ -5,7 +5,7 @@ export const products = [
     tagline: 'Urban Companion',
     taglineDesc: 'Mudah & Praktis untuk Aktivitas Sehari-hari',
     price: 'Rp 17.875.000',
-    colors: ['Putih', 'Hitam', 'Biru'],
+    colors: ['Merah', 'Putih', 'Hitam', 'Olive'],
     images: ['/images/evo/product.png', '/images/evo/page-1.png', '/images/evo/page-2.png'],
     specs: {
       'Tipe Motor': 'Motor Listrik',
@@ -34,7 +34,7 @@ export const products = [
     tagline: 'Smart Rider',
     taglineDesc: 'Cerdas & Stylish untuk Generasi Muda',
     price: 'Rp 18.875.000',
-    colors: ['Putih', 'Hitam', 'Merah'],
+    colors: ['Putih', 'Olive', 'Merah', 'Hitam'],
     images: ['/images/feliz/product.png', '/images/feliz/page-1.png', '/images/feliz/page-2.png'],
     specs: {
       'Tipe Motor': 'Motor Listrik',
@@ -64,7 +64,7 @@ export const products = [
     tagline: 'Performance Edge',
     taglineDesc: 'Performa Tinggi untuk Pengendara Berani',
     price: 'Rp 22.375.000',
-    colors: ['Hitam', 'Merah', 'Biru'],
+    colors: ['Hitam', 'Putih', 'Abu-abu', 'Merah-Hitam'],
     images: ['/images/viper/product.png', '/images/viper/page-1.png', '/images/viper/page-2.png'],
     specs: {
       'Tipe Motor': 'Motor Listrik',
