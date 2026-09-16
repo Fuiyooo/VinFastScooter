@@ -39,6 +39,7 @@ VinFastScooter/
 │   │   ├── Navbar.jsx              #   fixed, responsive, mobile menu
 │   │   ├── Hero.jsx                #   split layout: teks + brosur
 │   │   ├── Carousel.jsx            #   3D coverflow (perspective 1200px)
+│   │   ├── ProductGallery.jsx      #   galeri foto detail produk (7 slide)
 │   │   ├── ValueProps.jsx          #   4 keunggulan VinFast
 │   │   ├── ProductCard.jsx         #   kartu produk reusable
 │   │   ├── CTASection.jsx          #   banner CTA WhatsApp
@@ -110,8 +111,8 @@ Urutan komponen:
 ### 📄 Detail Produk (`/evo`, `/feliz`, `/viper`)
 
 - Breadcrumb "Kembali ke Produk"
-- Carousel 3D gambar produk
-- Info: tagline, nama, deskripsi, harga, warna, quick specs (4 kotak)
+- **Galeri foto (ProductGallery.jsx)** — 5 slide per model: 4 foto warna (samping), 1 tampak depan; arrows + dots + caption + strip thumbnail; slide warna tersinkron dengan chip "Warna Tersedia" (klik chip memindahkan slide)
+- Info: tagline, nama, deskripsi, harga, warna (chip aktif biru), quick specs (4 kotak)
 - Tombol "Tanya Harga via WhatsApp"
 - **Fitur Unggulan** — grid kartu dengan ikon ✓
 - **Spesifikasi Lengkap** — tabel alternating rows
@@ -134,6 +135,7 @@ Urutan komponen:
 | **Carousel** | 3D coverflow (perspective 1200px, rotateY ±25deg, translateZ -150px), auto-play optional, dots + arrows | ✅ Selesai & diperbesar |
 | **ValueProps** | 4 kartu keunggulan (Baterai, Lingkungan, Keamanan, Purna Jual) dengan ikon | ✅ Selesai & diperbesar |
 | **ProductCard** | Kartu produk: gambar, tagline, nama, quick specs, harga, CTA "Lihat Detail" | ✅ Selesai & diperbesar |
+| **ProductGallery** | Galeri detail produk: 5 slide (4 warna + tampak depan), fade animasi, sinkron dgn chip warna | ✅ Baru |
 | **CTASection** | Banner gradient primary, heading dinamis, 2 tombol (WhatsApp + Kontak) | ✅ Selesai & diperbesar |
 | **SpecTable** | Tabel spesifikasi, alternating row colors, header sticky | ✅ Selesai & diperbesar |
 | **Footer** | 3 kolom (brand, navigasi, kontak), bottom bar copyright | ✅ Selesai & diperbesar |
@@ -226,14 +228,15 @@ Semua gambar diekstrak dari PDF pada **300 DPI** dengan auto-trim (ImageMagick `
 - [ ] Fix border gambar produk (CSS: inner shadow, clip-path, atau re-trim manual)
 - [x] Isi harga asli dari data dealer/catalog ✅ (Evo 17.875.000, Feliz 18.875.000, Viper 22.375.000)
 - [x] Ganti favicon (logo VinFast, sumber: Wikimedia Commons "VinFast logo (simple variant).svg") ✅
-- [x] ProductDetail: ganti carousel dengan 1 gambar statis ✅
+- [x] ProductDetail: galeri foto carousel — 4 warna + tampak depan (5 slide; close-up dashboard/LED dihilangkan) ✅
 - [x] Navbar: logo diganti wordmark VinFast resmi (`public/vinfast-logo.svg`) ✅
 - [x] Gambar produk diganti foto polosan transparan dari server resmi VinFast (`public/images/{evo,feliz,viper}/product.png`) ✅
 - [x] Hero: edit katalog (hapus logo VINFAST & bar footer biru Cikawao) ✅
 - [x] Embed Google Maps di halaman Kontak + alamat asli dealer Cikawao ✅
 - [ ] Embed Google Maps di halaman Kontak
+- [x] Aset galeri detail ditambah dari vinfastauto.id (`public/images/{model}/{warna,front-view,dashboard,led}.webp`) ✅
 - [ ] Deploy ke Vercel/Netlify/Hosting lain
 
 ---
 
-*Dokumen terakhir diperbarui: 14 September 2026*
+*Dokumen terakhir diperbarui: 16 September 2026*

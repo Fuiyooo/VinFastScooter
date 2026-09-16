@@ -7,6 +7,13 @@ export const products = [
     price: 'Rp 17.875.000',
     colors: ['Merah', 'Putih', 'Hitam', 'Olive'],
     images: ['/images/evo/product.png', '/images/evo/page-1.png', '/images/evo/page-2.png'],
+    gallery: [
+      { src: '/images/evo/red.webp', label: 'Merah', kind: 'color' },
+      { src: '/images/evo/white.webp', label: 'Putih', kind: 'color' },
+      { src: '/images/evo/black-matt.webp', label: 'Hitam', kind: 'color' },
+      { src: '/images/evo/olive.webp', label: 'Olive', kind: 'color' },
+      { src: '/images/evo/front-view.webp', label: 'Tampak Depan', kind: 'angle' },
+    ],
     specs: {
       'Tipe Motor': 'Motor Listrik',
       'Tipe Baterai': 'LFP',
@@ -36,6 +43,13 @@ export const products = [
     price: 'Rp 18.875.000',
     colors: ['Putih', 'Olive', 'Merah', 'Hitam'],
     images: ['/images/feliz/product.png', '/images/feliz/page-1.png', '/images/feliz/page-2.png'],
+    gallery: [
+      { src: '/images/feliz/white.webp', label: 'Putih', kind: 'color' },
+      { src: '/images/feliz/olive.webp', label: 'Olive', kind: 'color' },
+      { src: '/images/feliz/red.webp', label: 'Merah', kind: 'color' },
+      { src: '/images/feliz/black.webp', label: 'Hitam', kind: 'color' },
+      { src: '/images/feliz/front-view.webp', label: 'Tampak Depan', kind: 'angle' },
+    ],
     specs: {
       'Tipe Motor': 'Motor Listrik',
       'Tipe Baterai': 'LFP',
@@ -66,6 +80,13 @@ export const products = [
     price: 'Rp 22.375.000',
     colors: ['Hitam', 'Putih', 'Abu-abu', 'Merah-Hitam'],
     images: ['/images/viper/product.png', '/images/viper/page-1.png', '/images/viper/page-2.png'],
+    gallery: [
+      { src: '/images/viper/matte-black.webp', label: 'Hitam', kind: 'color' },
+      { src: '/images/viper/white.webp', label: 'Putih', kind: 'color' },
+      { src: '/images/viper/grey.webp', label: 'Abu-abu', kind: 'color' },
+      { src: '/images/viper/red-black.webp', label: 'Merah-Hitam', kind: 'color' },
+      { src: '/images/viper/front-view.webp', label: 'Tampak Depan', kind: 'angle' },
+    ],
     specs: {
       'Tipe Motor': 'Motor Listrik',
       'Tipe Baterai': 'LFP',

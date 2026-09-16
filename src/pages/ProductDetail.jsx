@@ -1,13 +1,16 @@
 import { useParams, Link } from 'react-router-dom';
+import { useState } from 'react';
 import { ArrowLeft, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { products, dealer } from '../data/products';
 import SpecTable from '../components/SpecTable';
 import CTASection from '../components/CTASection';
+import ProductGallery from '../components/ProductGallery';
 
 export default function ProductDetail() {
   const { id } = useParams();
   const product = products.find((p) => p.id === id);
+  const [idx, setIdx] = useState(0);
 
   if (!product) {
     return (
@@ -36,17 +39,9 @@ export default function ProductDetail() {
           </Link>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Image */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="relative bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl border border-gray-100 aspect-square flex items-center justify-center overflow-hidden"
-            >
-              <img
-                src={product.images[0]}
-                alt={product.name}
-                className="w-full h-full object-contain p-6"
-              />
+            {/* Image slider */}
+            <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
+              <ProductGallery product={product} index={idx} onSelect={setIdx} />
             </motion.div>
 
             {/* Info */}
@@ -68,15 +63,26 @@ export default function ProductDetail() {
               {/* Colors */}
               <div className="mb-7">
                 <p className="text-base font-medium text-text-muted mb-3">Warna Tersedia</p>
-                <div className="flex gap-3">
-                  {product.colors.map((color) => (
-                    <span
-                      key={color}
-                      className="px-5 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-base font-medium"
-                    >
-                      {color}
-                    </span>
-                  ))}
+                <div className="flex flex-wrap gap-3">
+                  {product.colors.map((color) => {
+                    const gi = product.gallery.findIndex(
+                      (g) => g.kind === 'color' && g.label === color
+                    );
+                    return (
+                      <button
+                        key={color}
+                        type="button"
+                        onClick={() => gi !== -1 && setIdx(gi)}
+                        className={`px-5 py-2.5 rounded-lg text-base font-medium transition-all ${
+                          product.gallery[idx]?.label === color
+                            ? 'bg-primary text-white border-primary shadow-md shadow-primary/20'
+                            : 'bg-gray-50 border border-gray-200 hover:border-gray-300'
+                        }`}
+                      >
+                        {color}
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
