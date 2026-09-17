@@ -96,8 +96,8 @@ VinFastScooter/
 ### 🏠 Home (`/`)
 
 Urutan komponen:
-1. **Hero** — teks + brosur image, CTA "Lihat Produk" & "Hubungi Dealer"
-2. **Carousel** — 3D coverflow otomatis (4 gambar: Evo, Feliz, Viper, Other)
+1. **Hero** — teks + katalog flyer portrait (KATALOG E-SCOOTER CIKAWAO), CTA "Lihat Produk" & "Hubungi Dealer"
+2. **Carousel** — 3D coverflow otomatis (4 gambar: Evo/Feliz/Viper/Other; Other = brosur landscape #TimeToSwitch)
 3. **ValueProps** — 4 kartu keunggulan
 4. **Produk** — grid 3 kolom ProductCard (Evo, Feliz, Viper)
 5. **CTASection** — banner WhatsApp CTA
@@ -239,4 +239,4 @@ Semua gambar diekstrak dari PDF pada **300 DPI** dengan auto-trim (ImageMagick `
 
 ---
 
-*Dokumen terakhir diperbarui: 16 September 2026*
+*Dokumen terakhir diperbarui: 17 September 2026*

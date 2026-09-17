@@ -77,7 +77,7 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-xl">
               <img
-                src="/images/catalog/page-1.webp"
+                src="/images/catalog/flyer.webp"
                 alt="VinFast Scooter Brosur"
                 className="w-full h-auto rounded-2xl shadow-2xl"
               />

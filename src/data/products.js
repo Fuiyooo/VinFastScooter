@@ -126,5 +126,5 @@ export const katalogImages = [
   '/images/evo/page-1.png',
   '/images/feliz/page-1.png',
   '/images/viper/page-1.png',
-  '/images/other/page-1.png',
+  '/images/other/page-1.webp',
 ];
