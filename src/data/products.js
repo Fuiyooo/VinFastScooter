@@ -4,7 +4,7 @@ export const products = [
     name: 'VinFast Evo',
     tagline: 'Urban Companion',
     taglineDesc: 'Mudah & Praktis untuk Aktivitas Sehari-hari',
-    price: 'Rp 17.875.000',
+    price: 'Rp 18.375.000',
     colors: ['Merah', 'Putih', 'Hitam', 'Olive'],
     images: ['/images/evo/product.png', '/images/evo/page-1.png', '/images/evo/page-2.png'],
     gallery: [
@@ -40,7 +40,7 @@ export const products = [
     name: 'VinFast Feliz',
     tagline: 'Smart Rider',
     taglineDesc: 'Cerdas & Stylish untuk Generasi Muda',
-    price: 'Rp 18.875.000',
+    price: 'Rp 19.375.000',
     colors: ['Putih', 'Olive', 'Merah', 'Hitam'],
     images: ['/images/feliz/product.png', '/images/feliz/page-1.png', '/images/feliz/page-2.png'],
     gallery: [
@@ -77,7 +77,7 @@ export const products = [
     name: 'VinFast Viper',
     tagline: 'Performance Edge',
     taglineDesc: 'Performa Tinggi untuk Pengendara Berani',
-    price: 'Rp 22.375.000',
+    price: 'Rp 22.875.000',
     colors: ['Hitam', 'Putih', 'Abu-abu', 'Merah-Hitam'],
     images: ['/images/viper/product.png', '/images/viper/page-1.png', '/images/viper/page-2.png'],
     gallery: [

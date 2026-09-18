@@ -239,4 +239,4 @@ Semua gambar diekstrak dari PDF pada **300 DPI** dengan auto-trim (ImageMagick `
 
 ---
 
-*Dokumen terakhir diperbarui: 17 September 2026*
+*Dokumen terakhir diperbarui: 18 September 2026*
