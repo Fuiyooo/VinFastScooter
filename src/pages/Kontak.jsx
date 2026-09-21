@@ -1,4 +1,4 @@
-import { MapPin, Clock, Phone, MessageCircle } from 'lucide-react';
+import { MapPin, Clock, Phone, Mail, MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { dealer } from '../data/products';
 
@@ -43,6 +43,11 @@ export default function Kontak() {
                   icon: Phone,
                   title: 'Telepon',
                   content: dealer.phone,
+                },
+                {
+                  icon: Mail,
+                  title: 'Email',
+                  content: 'Greenscootervinfast@gmail.com',
                 },
               ].map((item) => (
                 <div
