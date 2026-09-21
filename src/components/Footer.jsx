@@ -68,7 +68,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-base text-gray-400">
                 <Mail className="w-5 h-5 shrink-0 text-accent" />
-                info@vinfastscooter.id
+                Greenscootervinfast@gmail.com
               </li>
             </ul>
           </div>
