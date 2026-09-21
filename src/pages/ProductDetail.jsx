@@ -112,7 +112,7 @@ export default function ProductDetail() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-accent text-white px-10 py-4 rounded-xl text-base font-bold hover:bg-accent/90 transition-all hover:shadow-lg"
               >
-                Tanya Harga via WhatsApp
+                Tanya via Whatsapp
               </a>
             </motion.div>
           </div>
