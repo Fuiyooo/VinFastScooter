@@ -44,9 +44,9 @@ export const products = [
     colors: ['Putih', 'Olive', 'Merah', 'Hitam'],
     images: ['/images/feliz/product.png', '/images/feliz/page-1.png', '/images/feliz/page-2.png'],
     gallery: [
-      { src: '/images/feliz/white.webp', label: 'Putih', kind: 'color' },
       { src: '/images/feliz/olive.webp', label: 'Olive', kind: 'color' },
       { src: '/images/feliz/red.webp', label: 'Merah', kind: 'color' },
+      { src: '/images/feliz/white.webp', label: 'Putih', kind: 'color' },
       { src: '/images/feliz/black.webp', label: 'Hitam', kind: 'color' },
       { src: '/images/feliz/front-view.webp', label: 'Tampak Depan', kind: 'angle' },
     ],
@@ -81,8 +81,8 @@ export const products = [
     colors: ['Hitam', 'Putih', 'Abu-abu', 'Merah-Hitam'],
     images: ['/images/viper/product.png', '/images/viper/page-1.png', '/images/viper/page-2.png'],
     gallery: [
-      { src: '/images/viper/matte-black.webp', label: 'Hitam', kind: 'color' },
       { src: '/images/viper/white.webp', label: 'Putih', kind: 'color' },
+      { src: '/images/viper/matte-black.webp', label: 'Hitam', kind: 'color' },
       { src: '/images/viper/grey.webp', label: 'Abu-abu', kind: 'color' },
       { src: '/images/viper/red-black.webp', label: 'Merah-Hitam', kind: 'color' },
       { src: '/images/viper/front-view.webp', label: 'Tampak Depan', kind: 'angle' },
