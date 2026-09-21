@@ -78,13 +78,14 @@ export const products = [
     tagline: 'Performance Edge',
     taglineDesc: 'Performa Tinggi untuk Pengendara Berani',
     price: 'Rp 22.875.000',
-    colors: ['Hitam', 'Putih', 'Abu-abu', 'Merah-Hitam'],
+    colors: ['Hitam', 'Merah', 'Putih', 'Cream', 'Abu-abu'],
     images: ['/images/viper/product.png', '/images/viper/page-1.png', '/images/viper/page-2.png'],
     gallery: [
-      { src: '/images/viper/white.webp', label: 'Putih', kind: 'color' },
       { src: '/images/viper/matte-black.webp', label: 'Hitam', kind: 'color' },
+      { src: '/images/viper/red-black.webp', label: 'Merah', kind: 'color' },
+      { src: '/images/viper/white.webp', label: 'Putih', kind: 'color' },
+      { src: '/images/viper/cream.webp', label: 'Cream', kind: 'color' },
       { src: '/images/viper/grey.webp', label: 'Abu-abu', kind: 'color' },
-      { src: '/images/viper/red-black.webp', label: 'Merah-Hitam', kind: 'color' },
       { src: '/images/viper/front-view.webp', label: 'Tampak Depan', kind: 'angle' },
     ],
     specs: {
